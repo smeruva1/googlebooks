@@ -19,14 +19,14 @@ function SavedBooks() {
 
   return (
     <>
-      <Jumbotron fluid className='text-light bg-dark'>
+      <Jumbotron fluid className='text-dark book-title'>
         <Container>
           <h1>Viewing saved books!</h1>
         </Container>
       </Jumbotron>
       <Container fluid>
         <h2>{savedBooks.length ? `Viewing ${savedBooks.length} saved books:` : 'You have no saved books!'}</h2>
-        <CardColumns>
+        <CardColumns  className="result-page">
           {savedBooks.map((book) => {
             return (
               <Card key={book._id} border='dark'>

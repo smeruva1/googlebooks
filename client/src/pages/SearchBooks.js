@@ -53,7 +53,7 @@ function SearchBooks() {
 
   return (
     <>
-      <Jumbotron fluid className='text-light bg-dark'>
+      <Jumbotron fluid className='text-dark book-title'>
         <Container>
           <h1>Search for Books!</h1>
           <Form onSubmit={handleFormSubmit}>
@@ -80,7 +80,7 @@ function SearchBooks() {
 
       <Container fluid>
         <h2>{searchedBooks.length ? `Viewing ${searchedBooks.length} results:` : 'Search for a book to begin'}</h2>
-        <CardColumns>
+        <CardColumns  className="result-page">
           {searchedBooks.map((book) => {
             return (
               <Card key={book.bookId} border='dark'>

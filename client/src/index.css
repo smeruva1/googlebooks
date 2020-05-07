@@ -19,6 +19,19 @@ h6 {
 .card-columns {
   column-count: 4;
   /* grid-column-gap: 6rem; */
-  column-gap: 2rem;
+  column-gap: 4rem;
 }
 
+.result-page {
+  background-image: url('./bookbg.jpeg');
+  /* opacity: 0.4; */
+}
+
+.book-title {
+  background-image: url('./booktitle.jpg');
+  /* opacity: 0.4; */
+}
+/* 
+.no-opacity {
+  opacity: 1;
+} */
